@@ -167,14 +167,12 @@ export default function ProductForm({
           {!!images?.length && images.map((link, index) => (
             <div key={index} className="cursor-pointer relative h-24 bg-white p-4 shadow-sm rounded-sm border border-gray-200">
               <div onClick={() => deleteImage(link)} className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-1 border-white rounded-full -top-1 -right-1 dark:border-gray-900">x</div>
-              <Image
-                src={link}
-                alt=""
+              <Image src={String(link)} alt=""
                 style={{
                   objectFit: 'contain'
                 }}
-                width={300}
-                height={400}
+                width={100}
+                height={100}
                 className="rounded-lg"
               />
             </div>

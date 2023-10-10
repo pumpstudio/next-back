@@ -2,7 +2,7 @@
 // import { redirect } from "next/dist/server/api-utils";
 import { useCallback, useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import axios from "axios";
+import axios from 'axios';
 import Spinner from "./Spinner";
 import { ReactSortable } from "react-sortablejs";
 import { toast } from 'react-toastify';
